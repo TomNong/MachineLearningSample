@@ -10,7 +10,7 @@ import cv2
 import csv
 
 #to read the ticdata2000.txt and store it in an array
-with open('YourPath/ticdata2000.txt','r') as f:
+with open('/YourPath/ticdata2000.txt','r') as f:
 	data = [x.strip().split('\t') for x in f]
 data = np.array(data)
 
@@ -26,7 +26,7 @@ knn = cv2.KNearest()
 knn.train(trainData, targetData)
 
 #read the ticeval2000.txt as array
-with open('YouPath/ticeval2000.txt','r') as f:
+with open('/YouPath/ticeval2000.txt','r') as f:
 	testData = [x.strip().split('\t') for x in f]
 testData = np.array(testData).astype(np.float32)
 
