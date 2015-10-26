@@ -6,9 +6,9 @@ import csv
 
 #define a function to replace value
 def replace(l, c, X, Y):
-for i,v in enumerate(l[:, c]):
-	if v == X:
-		l[i, c] = Y
+	for i,v in enumerate(l[:, c]):
+		if v == X:
+			l[i, c] = Y
 
 #read the data to an array
 reader = csv.reader(file('/home/Credit.csv', 'rb'), delimiter=',')
