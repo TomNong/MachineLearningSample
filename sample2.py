@@ -6,7 +6,7 @@ import csv
 
 
 #read the file Auto.csv
-reader = csv.reader(file('YourPath/Auto.csv', 'rb'), delimiter=',')
+reader = csv.reader(file('/YourPath/Auto.csv', 'rb'), delimiter=',')
 list = list(reader)
 #out put csv to an array
 oldArray = np.array(list)
