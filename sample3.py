@@ -11,7 +11,7 @@ def replace(l, c, X, Y):
 			l[i, c] = Y
 
 #read the data to an array
-reader = csv.reader(file('/home/Credit.csv', 'rb'), delimiter=',')
+reader = csv.reader(file('/YourPath/Credit.csv', 'rb'), delimiter=',')
 list = list(reader)
 oldArray = np.array(list)
 
